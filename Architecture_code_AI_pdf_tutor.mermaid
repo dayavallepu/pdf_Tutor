@@ -1,0 +1,14 @@
+graph TD
+    A[User] -->|Upload PDF| B[Flask Web App]
+    B --> C[PDF Processing]
+    C --> D[Text Extraction]
+    D --> E[Text Chunking]
+    E --> F[Embedding Generation]
+    F --> G[FAISS Index]
+    B -->|Question| H[Query Processing]
+    H --> I[Semantic Search]
+    I --> G
+    G --> J[Top Chunks]
+    J --> K[Gemini Prompt]
+    K --> L[Answer Generation]
+    L --> M[User]
