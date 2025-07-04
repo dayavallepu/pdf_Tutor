@@ -63,7 +63,7 @@ from pdf2image import convert_from_path
 import pytesseract
 
 # Set your Gemini API key from Google AI Studio
-genai.configure(api_key="AIzaSyBu4Ek3WlRR781Iv30iOyE0dsFHGEwe3V8")  # Replace this with your actual Gemini API key
+genai.configure(api_key="AIz")  # Replace this with your actual Gemini API key
 
 # Configuration
 class Config:
